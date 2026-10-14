@@ -1,0 +1,59 @@
+name: 问题反馈
+description: 使用中遇到异常、崩溃、显示不对
+title: "[问题] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈。请尽量把下面填完 —— 信息越全，越容易一次修好。
+  - type: input
+    id: version
+    attributes:
+      label: 版本号
+      description: 软件「设置 → 关于」里能看到，形如 1.0.11+4
+      placeholder: 1.0.11+4
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: 平台
+      options:
+        - Windows
+        - Android
+        - 其它
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: 出了什么问题
+      description: 越具体越好，比如「进入短剧 → 切到红果 → 封面一直是灰块」
+      placeholder: 描述你看到的现象
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 怎么复现
+      description: 按顺序写：先点哪里、再点哪里
+      placeholder: |
+        1. 打开「我的」→ 短剧
+        2. 切换到「红果」
+        3. ……
+    validations:
+      required: false
+  - type: textarea
+    id: shot
+    attributes:
+      label: 截图 / 录屏
+      description: 直接把图片拖进来即可
+    validations:
+      required: false
+  - type: textarea
+    id: expected
+    attributes:
+      label: 你期望的样子
+    validations:
+      required: false
