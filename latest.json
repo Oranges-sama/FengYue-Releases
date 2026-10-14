@@ -7,19 +7,21 @@
   "publishedAt": "2026-10-14T05:01:05Z",
   "notes": "",
   "installer": {
-    "name": "风月-1.0.11-4-安装包.exe",
+    "name": "FengYue-1.0.11-4-Setup.exe",
     "size": 64064620,
     "sha256": "b379b1b12437339f25978b45f57be66505ed93aa4c9fbefb7102580f5b02d15c",
-    "url": "https://github.com/Oranges-sama/FengYue-Releases/releases/download/v1.0.11-4/风月-1.0.11-4-安装包.exe",
-    "mirrors": []
+    "url": "https://github.com/Oranges-sama/FengYue-Releases/releases/download/v1.0.11-4/FengYue-1.0.11-4-Setup.exe",
+    "mirrors": [],
+    "localName": "风月-1.0.11-4-安装包.exe"
   },
   "apks": [
     {
-      "name": "风月-1.0.11-4-arm64-v8a.apk",
+      "name": "FengYue-1.0.11-4-arm64-v8a.apk",
       "size": 75498607,
       "sha256": "a2117b46ea366b9021f661d0febba21b66905725d5d741cab9d48da8cf9a0f1c",
-      "url": "https://github.com/Oranges-sama/FengYue-Releases/releases/download/v1.0.11-4/风月-1.0.11-4-arm64-v8a.apk",
-      "mirrors": []
+      "url": "https://github.com/Oranges-sama/FengYue-Releases/releases/download/v1.0.11-4/FengYue-1.0.11-4-arm64-v8a.apk",
+      "mirrors": [],
+      "localName": "风月-1.0.11-4-arm64-v8a.apk"
     }
   ],
   "files": [
