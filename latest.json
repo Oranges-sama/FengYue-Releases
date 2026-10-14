@@ -1,0 +1,468 @@
+{
+  "channel": "stable",
+  "version": "1.0.11",
+  "build": 5,
+  "versionCode": 5,
+  "appVersion": "1.0.11+5",
+  "publishedAt": "2026-10-14T05:01:05Z",
+  "notes": "",
+  "installer": {
+    "name": "风月-1.0.11-4-安装包.exe",
+    "size": 64064620,
+    "sha256": "b379b1b12437339f25978b45f57be66505ed93aa4c9fbefb7102580f5b02d15c"
+  },
+  "apks": [
+    {
+      "name": "风月-1.0.11-4-all.apk",
+      "size": 214446071,
+      "sha256": "cafc3da7084c0956531f0c1442bb10791ec91ac781c0c541350d12ee7f080dc5"
+    },
+    {
+      "name": "风月-1.0.11-4-arm64-v8a.apk",
+      "size": 75498607,
+      "sha256": "a2117b46ea366b9021f661d0febba21b66905725d5d741cab9d48da8cf9a0f1c"
+    },
+    {
+      "name": "风月-1.0.11-4-armeabi-v7a.apk",
+      "size": 73775951,
+      "sha256": "34622899a10f5dd06e728b6bfa9479f1f34c9d443afd4c85183ce5714e0dd49b"
+    },
+    {
+      "name": "风月-1.0.11-4-x86_64.apk",
+      "size": 82111223,
+      "sha256": "47d69eaa4b6901b0274faa6472c32b1cd2da194d74519c40929cbd5f5d5646e2"
+    }
+  ],
+  "files": [
+    {
+      "path": "WebView2Loader.dll",
+      "size": 165440,
+      "sha256": "9468470d6a4d11179ec179183d130465a380e0dedfdbe1fc2ab404c86c45a85e"
+    },
+    {
+      "path": "d3dcompiler_47.dll",
+      "size": 4891080,
+      "sha256": "5653bc7b0e2701561464ef36602ff6171c96bffe96e4c3597359cd7addcba88a"
+    },
+    {
+      "path": "data/app.so",
+      "size": 23315336,
+      "sha256": "d53c08e8038201e7042e50d8aca7590e8e2b6a911dae8cf69f52c7be4dd5d94a"
+    },
+    {
+      "path": "data/flutter_assets/AssetManifest.bin",
+      "size": 3989,
+      "sha256": "2c6ccfca8a644abff818fb7e8703d4e41a4380e6f6e1b8b427829f899f21fed9"
+    },
+    {
+      "path": "data/flutter_assets/FontManifest.json",
+      "size": 284,
+      "sha256": "4293387ef534ee178693aef189c960c9216644fc2c43f9d19dcbf589a86319bc"
+    },
+    {
+      "path": "data/flutter_assets/NOTICES.Z",
+      "size": 117265,
+      "sha256": "a67324cd65e126a9879d3de2c8f23f27981d7946c390cb95c841c01b75dd9466"
+    },
+    {
+      "path": "data/flutter_assets/NativeAssetsManifest.json",
+      "size": 131,
+      "sha256": "4ac70f7d67abb2ffc105d2cabfdee68c9aa138d132107e5be4949c539f7ce379"
+    },
+    {
+      "path": "data/flutter_assets/assets/fonts/alifangyuan.ttf",
+      "size": 7402152,
+      "sha256": "b0b8c4c057af7dbc6ccb52a3ad00138fed41d1ad37d4f4a666b6cd431c913d94"
+    },
+    {
+      "path": "data/flutter_assets/assets/icons/app_icon.png",
+      "size": 527030,
+      "sha256": "962cfa2c5b6953b4ca37377c508004ec669920ce92c25b7b4c82bc9983d244f7"
+    },
+    {
+      "path": "data/flutter_assets/assets/icons/app_icon_foreground.png",
+      "size": 18204,
+      "sha256": "3136784aa5f46dabc2c8ecec78d4a2e1dac9a193f40d3a9e118a51f2f575b35f"
+    },
+    {
+      "path": "data/flutter_assets/assets/icons/fengyue_splash-bg.png",
+      "size": 25873,
+      "sha256": "62a00592d89a59e739d64d760e255f4d346dc6a99dfe495dae2e78d7cf72405e"
+    },
+    {
+      "path": "data/flutter_assets/assets/icons/tray_black.png",
+      "size": 3390,
+      "sha256": "cace72bdc013e12ae2ba9e7d982c9342cb6f5866a70db3c57fee9aed646db69e"
+    },
+    {
+      "path": "data/flutter_assets/assets/icons/tray_white.png",
+      "size": 3830,
+      "sha256": "5d0513b5f3064dd763449255b20452f4f93181098f7a4df5b74c0dcb5a043a05"
+    },
+    {
+      "path": "data/flutter_assets/assets/kugou_verify/captcha.html",
+      "size": 2883,
+      "sha256": "dd8bdd7de58102a93afba3d4806be4d6ff0aa364186e203a202915d34f1797d6"
+    },
+    {
+      "path": "data/flutter_assets/assets/media_bar/heart_off.svg",
+      "size": 813,
+      "sha256": "293f2869edd65bfb6b01501e17975b13a7a7dca5afa54ce0b2b927bc08d88f8b"
+    },
+    {
+      "path": "data/flutter_assets/assets/media_bar/heart_on.svg",
+      "size": 583,
+      "sha256": "d513675456d7a9399973dbe53219be008b63464bfc796b55aac6b6ac7c6b530c"
+    },
+    {
+      "path": "data/flutter_assets/assets/media_bar/next.svg",
+      "size": 696,
+      "sha256": "65700859f445910dd71f88a3c2c273394844e6b2597063bdf866390918486f95"
+    },
+    {
+      "path": "data/flutter_assets/assets/media_bar/pause.svg",
+      "size": 692,
+      "sha256": "6530f797938fe314654e42309f5bb6cae4767dd18f6092305d16189a7afe4975"
+    },
+    {
+      "path": "data/flutter_assets/assets/media_bar/play.svg",
+      "size": 620,
+      "sha256": "70e2d08e0684f94023d4bcf49f71a6414af1df2ea5ccbe34ba19957c90e17865"
+    },
+    {
+      "path": "data/flutter_assets/assets/media_bar/prev.svg",
+      "size": 697,
+      "sha256": "1fd81126d5c817a0ada41147ee3db16a4e8654d24d45593f876cfc468363944c"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/audio-cast.svg",
+      "size": 2046,
+      "sha256": "2d88f9935088c906cf6f1a974a1957d9bb78046509056ce42068435bdf9b1854"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/bd.webp",
+      "size": 1668,
+      "sha256": "ba5d106843367a48260502a0a2f917bfd9214ee1145558313ea64854485fe157"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/comment.svg",
+      "size": 804,
+      "sha256": "96f380b26927222e47b0ebc8c978b404acdba392d1291670dbbd3ffab735ade1"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/download.svg",
+      "size": 598,
+      "sha256": "884c33836ec0acdc64ed2f9195eb4d23dd06ed01c4a1626c5cedbffb75d989e2"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/dropdown.svg",
+      "size": 589,
+      "sha256": "0cbec47431a78998332208ba3a6b230996efc8496b029d29851253a37c9a52fc"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/fullscreen-collapse.svg",
+      "size": 2774,
+      "sha256": "dbf6b769c87a7f928e18dbfa3220342d8fbfb69855f2c7a78a68c1fe4d4b4f8e"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/fullscreen-expand.svg",
+      "size": 2752,
+      "sha256": "67285a40829e0a63779d8d45fa62a01ff51c374995682056f92bd49175a4afbd"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/fullscreen.svg",
+      "size": 872,
+      "sha256": "fbeef55a0de7518141ab6cd418773e2f169ce97270ca028f1df6ac563ee5551a"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/kg.svg",
+      "size": 1340,
+      "sha256": "5184232463af213016615d9b2074a5589c3feb42a78f2ad0cf9fae1f81a9864e"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/kw.svg",
+      "size": 3725,
+      "sha256": "803376721b84b9ed878decc539c701abd6db6e7dae1639c51c696a8730389826"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/lyrics.svg",
+      "size": 2044,
+      "sha256": "d647b3d16a80f43a3cefafa18fee319cccbb5732862ebaf23284bca1fc3fdc47"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/mg.svg",
+      "size": 4841,
+      "sha256": "070596b5d4db88c32613f35bd5751db1243400e639fcd0f679d0df458d4a45b8"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/mode-repeat-one.svg",
+      "size": 1322,
+      "sha256": "868d6cdd5e8e8a35cf900fc215f7e310d9f98d254f3bf9a2040b9404d0468db5"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/mode-repeat.svg",
+      "size": 1162,
+      "sha256": "58f367b81a1decb859658e102f94792b9dc892f5f79c1cb8a1a40d468d37ad6f"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/mode-shuffle.svg",
+      "size": 1507,
+      "sha256": "716030799bbca1207582d081c023b68bf3650382aa8a76ee6a45bee50fb93276"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/more.svg",
+      "size": 255,
+      "sha256": "f3644d74f6cb0c7de0ff62089c638b4d270b805ec9019a08d70658ac25a9164e"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/pointer.png",
+      "size": 7319,
+      "sha256": "63009d3f3edfe2acfc75ba6c97352996bdc719fbd16a0b4afd7811dd5c34da5d"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/queue.svg",
+      "size": 1056,
+      "sha256": "1396c507060acbd3416061bec396666898d20d313b70e36b1e31fa7290f9b701"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/recog.svg",
+      "size": 718,
+      "sha256": "3e6fcf7c183bda48899d4b93e0e34647bcbdb023b00796ecf32baa8a2221e41d"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/skin.svg",
+      "size": 923,
+      "sha256": "1b0e846a060461d7eb9f45e3d2a8d8c5b4a0a38fb3ca587e49bcd9365d3e53ff"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/timer.svg",
+      "size": 1172,
+      "sha256": "3fdca177021f76410acb2745f51131baf2367bc7f196bba7c06293de2d27e157"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/tx.svg",
+      "size": 1343,
+      "sha256": "ddd4d1a06b1cc576b64c1483d08954acdd8adfe58397465fb4a1aacf06864217"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/volume-high.svg",
+      "size": 1850,
+      "sha256": "7d0491553cdd553066cdb62e3690d21fbf9e7739603bd52ac06ed7e5271da4b8"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/volume-low.svg",
+      "size": 1020,
+      "sha256": "7ad14be46002b245f5ea3756a8e4d5ebe99fb1eea4cc486e3e0cb2437fd6ec19"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/volume-mid.svg",
+      "size": 1367,
+      "sha256": "0af423b6dd0b10d08c84f9432ea8a7ab8767ad7c889d0d5bcb0d579d1252f88e"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/volume-off.svg",
+      "size": 974,
+      "sha256": "d69029018c505a245aab6552dedd5b0137d778be85f9f36590cd4664cf3281c1"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/wy.svg",
+      "size": 2269,
+      "sha256": "8291d2cb12c602a84017372295eb6ff7d43d587b5a70b4236aff9f4c22a96870"
+    },
+    {
+      "path": "data/flutter_assets/fonts/MaterialIcons-Regular.otf",
+      "size": 60432,
+      "sha256": "ba46654ddc0d0513b59573aa6e522fc4a1d0e0713e6b5a96450af97844ce56c6"
+    },
+    {
+      "path": "data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf",
+      "size": 257628,
+      "sha256": "67c44fe9183b002e79dde7f6977e2988661c9a3e4a3c5fce968787efdbed823c"
+    },
+    {
+      "path": "data/flutter_assets/packages/flutter_inappwebview/assets/t_rex_runner/t-rex.css",
+      "size": 1688,
+      "sha256": "2e563220bd855e11f230dc27a0d6f2fd5b839a2996f86edc8025aab45e6fa5c3"
+    },
+    {
+      "path": "data/flutter_assets/packages/flutter_inappwebview/assets/t_rex_runner/t-rex.html",
+      "size": 82244,
+      "sha256": "dc72cfc1f1d2a5013bb9de34f8cacf5e26e542d7d713fcbe09b865b4aaca6ddf"
+    },
+    {
+      "path": "data/flutter_assets/packages/flutter_inappwebview_web/assets/web/web_support.js",
+      "size": 28409,
+      "sha256": "2f9ccef9db4da6b73d3c678ffe570aad402791b00dfa520730fdb66d0dc209fc"
+    },
+    {
+      "path": "data/flutter_assets/packages/flutter_js/assets/js/fetch.js",
+      "size": 1908,
+      "sha256": "466306adec694b9c09cfbc2702810a623396f23f51158e0fad47c513ddcf2317"
+    },
+    {
+      "path": "data/flutter_assets/packages/media_kit/assets/web/hls1.4.10.js",
+      "size": 374690,
+      "sha256": "30b278794fd3f269a47e6dc7b76ae9a04f08acffdd72f9b8cc26d49d3ba09c38"
+    },
+    {
+      "path": "data/flutter_assets/packages/oc_liquid_glass/shaders/liquid_glass.frag",
+      "size": 69712,
+      "sha256": "1ec74a7931f9f0ad83583a27cb28aca6ad2e49037bb4c2cf8459524ee04ec28b"
+    },
+    {
+      "path": "data/flutter_assets/packages/wakelock_plus/assets/no_sleep.js",
+      "size": 13669,
+      "sha256": "726c644cda17bf271d996fb629806a59409607e9b00e0dfbf75adfd3986bbb7e"
+    },
+    {
+      "path": "data/flutter_assets/shaders/ink_sparkle.frag",
+      "size": 21856,
+      "sha256": "1fe8436a743884cb65078fe8c7b38e18f5365f2a2961270916f426fd13c604af"
+    },
+    {
+      "path": "data/flutter_assets/shaders/liquid_refraction.frag",
+      "size": 16912,
+      "sha256": "23736d11ac5d9ccd2ab7c32894b8fdf27f91e163b8b643705dc121b5e1054ad2"
+    },
+    {
+      "path": "data/flutter_assets/shaders/stretch_effect.frag",
+      "size": 17616,
+      "sha256": "bc7599dbbbaab310efe41520574138d21fb18a88c8fe4495ed79315309336f6f"
+    },
+    {
+      "path": "data/icudtl.dat",
+      "size": 864880,
+      "sha256": "325a86063d26334c2eabe1743cea073b612540fbf3d8fc2ef0b5708e3763a8c7"
+    },
+    {
+      "path": "desktop_drop_plugin.dll",
+      "size": 91648,
+      "sha256": "6a769dd9a1fca40812bd7bac82c87b913310af7fbd11245cb731eec9299a0758"
+    },
+    {
+      "path": "dynamic_color_plugin.dll",
+      "size": 82944,
+      "sha256": "02c0affcc4b66f066b5ad3b5cec05cdd1712eeeee99d2554e09b0a99dd2ed1e3"
+    },
+    {
+      "path": "fengyue_drama_core.dll",
+      "size": 18928128,
+      "sha256": "d659b74e98a5b4f035b627a32c0f95672919f6bebe7fb784ebb373e84ddc9850"
+    },
+    {
+      "path": "fengyue_media.exe",
+      "size": 1508352,
+      "sha256": "2c56efe438a049c196cb4507b1967cb2a337fac4a584bda2767baf65946d4a6b"
+    },
+    {
+      "path": "file_selector_windows_plugin.dll",
+      "size": 111616,
+      "sha256": "1b2843f64dd1749d2064043fd62eb1362b37e6a264d793565b703d2fbe4a8e5e"
+    },
+    {
+      "path": "flutter_inappwebview_windows_plugin.dll",
+      "size": 968704,
+      "sha256": "b9225aa4a63d1677ef1ab3cbe457bf781ea7320ce3d26ba9df2f1cbbb673ca02"
+    },
+    {
+      "path": "flutter_js_plugin.dll",
+      "size": 88576,
+      "sha256": "2c675c0265359e9fbe37248d3babcb1c6267f168afe9e4febe23c346a49b754f"
+    },
+    {
+      "path": "flutter_tts_plugin.dll",
+      "size": 160768,
+      "sha256": "108ed9c2f02cbe3f18df11e834e2f4f8080e51c258eb5aca620ada213747e2ef"
+    },
+    {
+      "path": "flutter_volume_controller_plugin.dll",
+      "size": 109056,
+      "sha256": "9d23d622c130f0b6641045425815faceaf7ac2f4728e5d039ce9fe10e4fbebe6"
+    },
+    {
+      "path": "flutter_windows.dll",
+      "size": 21274112,
+      "sha256": "4598eeff31a9b24947083d3722ccfe0ce62aced05c4bd2c717a4b4af492dac9b"
+    },
+    {
+      "path": "gal_plugin.dll",
+      "size": 182272,
+      "sha256": "d6f45da4000ee704ca78aeecbd2d3c8441f603d880858a85c03ce126318a6356"
+    },
+    {
+      "path": "just_audio_windows_plugin.dll",
+      "size": 181248,
+      "sha256": "9fda1e1449cf43b61a48e75280ec61f1857dd6eeab4746627602259ecaa15d0a"
+    },
+    {
+      "path": "libEGL.dll",
+      "size": 472904,
+      "sha256": "b2590bd0692f0381fc45c20bf1c7f7f713c9ea19c7ea6bab62efdd1fadc4eaac"
+    },
+    {
+      "path": "libGLESv2.dll",
+      "size": 7414088,
+      "sha256": "620bb6e38d7ed6c760a0cf4a8eb6a8f64b259b96ff286551cd32cefc6c35ca39"
+    },
+    {
+      "path": "libc++.dll",
+      "size": 1275904,
+      "sha256": "8adf316d0d6eb6841da663f6a63fdde6ed8e43dfb6610dc2076942b5454df2b9"
+    },
+    {
+      "path": "libmpv-2.dll",
+      "size": 120768000,
+      "sha256": "b2973810976f7cc7e383e5a1ec3f46127f6d81849ea8d9563dd8096bbea47cf0"
+    },
+    {
+      "path": "media_kit_libs_windows_video_plugin.dll",
+      "size": 12800,
+      "sha256": "a153f3505b9b85c4a5e295733145425789d62c1f6b184c2dcbf0a4d67593c4d1"
+    },
+    {
+      "path": "media_kit_video_plugin.dll",
+      "size": 151040,
+      "sha256": "82b14d2a47b0a29e82935737941e9767ce68e27e696c69df328a9ddc7c0ad8bb"
+    },
+    {
+      "path": "permission_handler_windows_plugin.dll",
+      "size": 120320,
+      "sha256": "12a13ae6f3e36a0e8282aecbd734d260c886280057f2d5a6417ee05097c26714"
+    },
+    {
+      "path": "quickjs_c_bridge.dll",
+      "size": 677376,
+      "sha256": "e2051274a1d7599d131d45b96c7cc53519a9009bf43a802b922f73031d3d3b4b"
+    },
+    {
+      "path": "record_windows_plugin.dll",
+      "size": 216064,
+      "sha256": "d7636764ac77bf3966d6f4d607f50cdc9a4088d57693bd372495432bb940c353"
+    },
+    {
+      "path": "sqlite3.dll",
+      "size": 1714688,
+      "sha256": "858141a2826f53e8374cb07de2638e0f1ac944f49b897dd558feba5597e86d1c"
+    },
+    {
+      "path": "url_launcher_windows_plugin.dll",
+      "size": 98304,
+      "sha256": "ac195139fc360932f6554334b3dad9d47b19fd99a8e28d008f344a811016b2d7"
+    },
+    {
+      "path": "vk_swiftshader.dll",
+      "size": 4808008,
+      "sha256": "4f33eea716491972cb1ad123a78acef485f852581130d3f3a98a1981009004f2"
+    },
+    {
+      "path": "vulkan-1.dll",
+      "size": 872776,
+      "sha256": "3be9a95dd9019aa1aca47ade26f5c1c7c0047f3cf6f633d586c9ec0d3b459566"
+    },
+    {
+      "path": "zlib.dll",
+      "size": 203264,
+      "sha256": "82d5bf175cf882ac9afc1558b416e674606d055966bc09529076b28a498fc0e4"
+    }
+  ]
+}
