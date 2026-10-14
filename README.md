@@ -1,37 +1,27 @@
-# 风月 FengYue · 发布仓库
+# 风月 · 发布仓库
 
-> 本仓库**只放发布产物与更新清单**，不含源码。
+这里发布风月的安装包与更新清单。本仓库只存放发布产物，不包含源码。
 
-## 目录约定
+## 下载
 
-| 文件 | 用途 |
-|---|---|
-| `latest.json` | ⭐ **更新清单**：版本号、安装包/APK/产物文件的 sha256、附件地址 |
-| `latest-beta.json` | （预留）测试通道 |
+请到 [Releases](https://github.com/Oranges-sama/FengYue-Releases/releases) 页面下载：
 
-安装包、APK、差分补丁等**大文件**放在 [Releases](../../releases) 附件里，**不进本仓库** ✗。
+| 平台 | 文件 | 说明 |
+|---|---|---|
+| Windows | `风月-x.y.z-N-安装包.exe` | 双击安装 |
+| Android | `风月-x.y.z-N-all.apk` | 不确定机型就选这个 |
+| Android | `风月-x.y.z-N-<架构>.apk` | 明确架构时选，体积更小 |
 
-## 更新器怎么用
+## 更新清单
+
+`latest.json` 是软件内置更新器的入口，记录当前版本、各文件的 SHA-256 与下载地址。
 
 ```
-GET https://raw.githubusercontent.com/Oranges-sama/FengYue-Releases/main/latest.json
+https://fastly.jsdelivr.net/gh/Oranges-sama/FengYue-Releases@main/latest.json
 ```
 
-`latest.json` 字段（详见 `docs/更新与分发方案.md` §1.3）：
+字段说明与整体方案见 [docs/更新与分发方案.md](https://github.com/Oranges-sama/FengYue/blob/main/docs/更新与分发方案.md)。
 
-```json
-{
-  "channel": "stable",
-  "version": "1.0.11",
-  "build": 4,
-  "versionCode": 4,
-  "appVersion": "1.0.11+4",
-  "publishedAt": "2026-10-14T05:00:00Z",
-  "notes": "",
-  "installer": { "name": "风月-1.0.11-4-安装包.exe", "size": 0, "sha256": "…", "url": "" },
-  "apks": [ { "name": "风月-1.0.11-4-all.apk", "size": 0, "sha256": "…", "url": "" } ],
-  "files": [ { "path": "fengyue_media.exe", "size": 0, "sha256": "…" } ]
-}
-```
+## 版本号
 
-⛔ **`files` 只含「普通版」产物**；管理员版是内部变体，**不发布** ✗。
+形如 `1.0.11+4`：前半是显示版本，`+N` 是构建号（只增不减）。
