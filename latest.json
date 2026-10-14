@@ -15,31 +15,10 @@
   },
   "apks": [
     {
-      "name": "风月-1.0.11-4-all.apk",
-      "size": 214446071,
-      "sha256": "cafc3da7084c0956531f0c1442bb10791ec91ac781c0c541350d12ee7f080dc5",
-      "url": "https://github.com/Oranges-sama/FengYue-Releases/releases/download/v1.0.11-4/风月-1.0.11-4-all.apk",
-      "mirrors": []
-    },
-    {
       "name": "风月-1.0.11-4-arm64-v8a.apk",
       "size": 75498607,
       "sha256": "a2117b46ea366b9021f661d0febba21b66905725d5d741cab9d48da8cf9a0f1c",
       "url": "https://github.com/Oranges-sama/FengYue-Releases/releases/download/v1.0.11-4/风月-1.0.11-4-arm64-v8a.apk",
-      "mirrors": []
-    },
-    {
-      "name": "风月-1.0.11-4-armeabi-v7a.apk",
-      "size": 73775951,
-      "sha256": "34622899a10f5dd06e728b6bfa9479f1f34c9d443afd4c85183ce5714e0dd49b",
-      "url": "https://github.com/Oranges-sama/FengYue-Releases/releases/download/v1.0.11-4/风月-1.0.11-4-armeabi-v7a.apk",
-      "mirrors": []
-    },
-    {
-      "name": "风月-1.0.11-4-x86_64.apk",
-      "size": 82111223,
-      "sha256": "47d69eaa4b6901b0274faa6472c32b1cd2da194d74519c40929cbd5f5d5646e2",
-      "url": "https://github.com/Oranges-sama/FengYue-Releases/releases/download/v1.0.11-4/风月-1.0.11-4-x86_64.apk",
       "mirrors": []
     }
   ],
