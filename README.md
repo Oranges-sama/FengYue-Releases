@@ -30,7 +30,6 @@ https://raw.githubusercontent.com/Oranges-sama/FengYue-Releases/main/latest.json
 
 - [使用说明](docs/USAGE.md)
 - [专业版说明](docs/PRO.md)
-- [更新清单字段说明](docs/MANIFEST.md)
 
 ## 反馈
 
