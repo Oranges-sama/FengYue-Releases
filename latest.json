@@ -1,25 +1,25 @@
 {
   "channel": "stable",
   "version": "1.0.12",
-  "build": 5,
-  "versionCode": 5,
-  "appVersion": "1.0.12+5",
-  "publishedAt": "2026-10-14T07:15:32Z",
-  "notes": "- 移动端设置页面交互调整\n- 自动 / 手动更新功能上线",
+  "build": 6,
+  "versionCode": 6,
+  "appVersion": "1.0.12+6",
+  "publishedAt": "2026-10-15T15:35:46Z",
+  "notes": "短剧平台新增并修复部分失效平台（测试）；短剧页面重构；短剧类别筛选重做（测试阶段 可能有bug）；短剧相关引擎重做，可能出现意外情况（未测试）；如有什么问题可等待后续版本更新\n\n---",
   "installer": {
-    "name": "FengYue-1.0.12-5-Setup.exe",
-    "localName": "风月-1.0.12-5-安装包.exe",
-    "size": 64088937,
-    "sha256": "8fa233df4e655a9102ddd24a4dd567c1e41b6565ec614c4f30a348723c5d39fc",
-    "url": "https://github.com/Oranges-sama/FengYue-Releases/releases/download/v1.0.12-5/FengYue-1.0.12-5-Setup.exe"
+    "name": "FengYue-1.0.12-6-Setup.exe",
+    "localName": "风月-1.0.12-6-安装包.exe",
+    "size": 64154619,
+    "sha256": "ddde08ea08a112d46d74cf1c4fcbfdf98092df5102a7456dec110100cac19c51",
+    "url": "https://github.com/Oranges-sama/FengYue-Releases/releases/download/v1.0.12-6/FengYue-1.0.12-6-Setup.exe"
   },
   "apks": [
     {
-      "name": "FengYue-1.0.12-5-arm64-v8a.apk",
-      "localName": "风月-1.0.12-5-arm64-v8a.apk",
-      "size": 75498987,
-      "sha256": "1b86945d8bec5cef00be256d0c51e875e69464a20276823f392ed728878ba411",
-      "url": "https://github.com/Oranges-sama/FengYue-Releases/releases/download/v1.0.12-5/FengYue-1.0.12-5-arm64-v8a.apk"
+      "name": "FengYue-1.0.12-6-arm64-v8a.apk",
+      "localName": "风月-1.0.12-6-arm64-v8a.apk",
+      "size": 75922165,
+      "sha256": "1d6160477bb0568443a7689a5930593f82f51ed80f91a5d4886549fc7360c3d9",
+      "url": "https://github.com/Oranges-sama/FengYue-Releases/releases/download/v1.0.12-6/FengYue-1.0.12-6-arm64-v8a.apk"
     }
   ],
   "files": [
@@ -35,8 +35,8 @@
     },
     {
       "path": "data/app.so",
-      "size": 23364488,
-      "sha256": "67d0e2dbdad18db41e2d2a85822d0c08284768f335ad9c0ccbea2eb95b05903c"
+      "size": 23790472,
+      "sha256": "03eb95450d3b2b300fe2d2e8d59a350d0556c90454822a3f98e42455f611acb7"
     },
     {
       "path": "data/flutter_assets/AssetManifest.bin",
@@ -65,8 +65,8 @@
     },
     {
       "path": "data/flutter_assets/assets/icons/app_icon.png",
-      "size": 527030,
-      "sha256": "962cfa2c5b6953b4ca37377c508004ec669920ce92c25b7b4c82bc9983d244f7"
+      "size": 541935,
+      "sha256": "53da3111c9ff84b69ab3602ee48520f42983a0d1e284f0741e1abbcee97f5452"
     },
     {
       "path": "data/flutter_assets/assets/icons/app_icon_foreground.png",
@@ -260,8 +260,8 @@
     },
     {
       "path": "data/flutter_assets/fonts/MaterialIcons-Regular.otf",
-      "size": 60984,
-      "sha256": "b1b966420748e56e0a134c19c9009a0747836d7f4b095cfcd209dcbb598b76e5"
+      "size": 61332,
+      "sha256": "04f5943775d9a405ac062abd9afb7082c0a61ea48e9883105d1ab931cc434280"
     },
     {
       "path": "data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf",
@@ -335,13 +335,13 @@
     },
     {
       "path": "fengyue_drama_core.dll",
-      "size": 18928128,
-      "sha256": "d659b74e98a5b4f035b627a32c0f95672919f6bebe7fb784ebb373e84ddc9850"
+      "size": 18616320,
+      "sha256": "e8dc01abb776ef2792aef769f6cf10657ee5cf7205d058cbb076461a9a8a84be"
     },
     {
       "path": "fengyue_media.exe",
-      "size": 1508352,
-      "sha256": "2472bd6133037601b4ba63187cc7528562d3799742e71c85dff19cc60b219094"
+      "size": 1517056,
+      "sha256": "4b95dc282f648708b7997f4245687e74c8893900858417cc1775593245e22f17"
     },
     {
       "path": "file_selector_windows_plugin.dll",
