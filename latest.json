@@ -4,21 +4,21 @@
   "build": 6,
   "versionCode": 6,
   "appVersion": "1.0.12+6",
-  "publishedAt": "2026-10-15T15:35:46Z",
-  "notes": "短剧平台新增并修复部分失效平台（测试）；短剧页面重构；短剧类别筛选重做（测试阶段 可能有bug）；短剧相关引擎重做，可能出现意外情况（未测试）；如有什么问题可等待后续版本更新\n\n---",
+  "publishedAt": "2026-10-16T03:58:01Z",
+  "notes": "短剧平台新增并修复部分失效平台（测试）；短剧页面重构；短剧类别筛选重做（测试阶段 可能有bug）；短剧相关引擎重做，可能出现意外情况（未测试）；如有什么问题可等待后续版本更新\n安卓用户注意：本次更新前需要你去软件里面手动备份一次数据，然后大概率可能需要卸载重装\n因为安卓版本因为flutter构建时候有构建号偏移 以前没有自动更新时候无所谓，现在有这功能后移动设备收不到软件更新 所以需要后面卸载安装一次新版本 大概率不能直接安装，仅安卓用户需要\n\n### 本次产物\n\n- `FengYue-1.0.12-6-Setup.exe`：**Windows 端安装包** —— 下载后双击安装\n- `FengYue-1.0.12-6-arm64-v8a.apk`：安卓安装包 —— **绝大多数安卓手机都装这个**（现在的主流手机都是它）",
   "installer": {
     "name": "FengYue-1.0.12-6-Setup.exe",
     "localName": "风月-1.0.12-6-安装包.exe",
-    "size": 64154619,
-    "sha256": "ddde08ea08a112d46d74cf1c4fcbfdf98092df5102a7456dec110100cac19c51",
+    "size": 64156817,
+    "sha256": "090b721687a965bb82009e71d4b2abd02e50d4df2f612be46772f39cfc401270",
     "url": "https://github.com/Oranges-sama/FengYue-Releases/releases/download/v1.0.12-6/FengYue-1.0.12-6-Setup.exe"
   },
   "apks": [
     {
       "name": "FengYue-1.0.12-6-arm64-v8a.apk",
       "localName": "风月-1.0.12-6-arm64-v8a.apk",
-      "size": 75922165,
-      "sha256": "1d6160477bb0568443a7689a5930593f82f51ed80f91a5d4886549fc7360c3d9",
+      "size": 75922161,
+      "sha256": "fc6a3a0f3125e387409b0599516b4f7660b3b1fcb682b9b21aef2f68b0824147",
       "url": "https://github.com/Oranges-sama/FengYue-Releases/releases/download/v1.0.12-6/FengYue-1.0.12-6-arm64-v8a.apk"
     }
   ],
@@ -341,7 +341,7 @@
     {
       "path": "fengyue_media.exe",
       "size": 1517056,
-      "sha256": "4b95dc282f648708b7997f4245687e74c8893900858417cc1775593245e22f17"
+      "sha256": "c2ef5117bac9f604bff09666ac3fc42afbb956975b5dfba4de3b88382311f911"
     },
     {
       "path": "file_selector_windows_plugin.dll",
