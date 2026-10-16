@@ -1,25 +1,25 @@
 {
   "channel": "stable",
   "version": "1.0.12",
-  "build": 6,
-  "versionCode": 6,
-  "appVersion": "1.0.12+6",
-  "publishedAt": "2026-10-16T03:58:01Z",
-  "notes": "短剧平台新增并修复部分失效平台（测试）；短剧页面重构；短剧类别筛选重做（测试阶段 可能有bug）；短剧相关引擎重做，可能出现意外情况（未测试）；如有什么问题可等待后续版本更新\n安卓用户注意：本次更新前需要你去软件里面手动备份一次数据，然后大概率可能需要卸载重装\n因为安卓版本因为flutter构建时候有构建号偏移 以前没有自动更新时候无所谓，现在有这功能后移动设备收不到软件更新 所以需要后面卸载安装一次新版本 大概率不能直接安装，仅安卓用户需要\n\n### 本次产物\n\n- `FengYue-1.0.12-6-Setup.exe`：**Windows 端安装包** —— 下载后双击安装\n- `FengYue-1.0.12-6-arm64-v8a.apk`：安卓安装包 —— **绝大多数安卓手机都装这个**（现在的主流手机都是它）",
+  "build": 7,
+  "versionCode": 7,
+  "appVersion": "1.0.12+7",
+  "publishedAt": "2026-10-16T16:08:57Z",
+  "notes": "本版加入了预览版更新通道开关，如果想要更快体验新功能的用户并且能够接受各种不稳定情况的可以打开开关，注意遇到问题可以去github发isse反馈，带上具体复现步骤\n短剧功能重做，目前红果短剧暂时移除，新增了很多专业版专属短剧平台，新增普通用户也能使用的可自己添加站点的管理系统\n同时因为重构所以本版本开始不需要之前的大型引擎文件了，安装包和占用都会变小\n然后是红果已经下线 上线新的用户资源站点系统（测试）上线了很多新站点 大部分站点已经可以正常工作了 目前黄果依旧异常 需要等待后续更新 以及后续的测试性更新将会改为预览通道，需要去设置里面打开预览通道开关\n注意：部分插件系统因为之前的架构调整可能出现异常 请等待近期修复\n---\n\n### 本次产物\n\n- `FengYue-1.0.12-7-Setup.exe`：**Windows 端安装包** —— 下载后双击安装\n- `FengYue-1.0.12-7-arm64-v8a.apk`：安卓安装包 —— **绝大多数安卓手机都装这个**（现在的主流手机都是它）",
   "installer": {
-    "name": "FengYue-1.0.12-6-Setup.exe",
-    "localName": "风月-1.0.12-6-安装包.exe",
-    "size": 64156817,
-    "sha256": "090b721687a965bb82009e71d4b2abd02e50d4df2f612be46772f39cfc401270",
-    "url": "https://github.com/Oranges-sama/FengYue-Releases/releases/download/v1.0.12-6/FengYue-1.0.12-6-Setup.exe"
+    "name": "FengYue-1.0.12-7-Setup.exe",
+    "localName": "风月-1.0.12-7-安装包.exe",
+    "size": 58958047,
+    "sha256": "58e8dda44c944fb6f2491add2611de35c7c542639bf2c812d630fd75f1b3de2e",
+    "url": "https://github.com/Oranges-sama/FengYue-Releases/releases/download/v1.0.12-7/FengYue-1.0.12-7-Setup.exe"
   },
   "apks": [
     {
-      "name": "FengYue-1.0.12-6-arm64-v8a.apk",
-      "localName": "风月-1.0.12-6-arm64-v8a.apk",
-      "size": 75922161,
-      "sha256": "fc6a3a0f3125e387409b0599516b4f7660b3b1fcb682b9b21aef2f68b0824147",
-      "url": "https://github.com/Oranges-sama/FengYue-Releases/releases/download/v1.0.12-6/FengYue-1.0.12-6-arm64-v8a.apk"
+      "name": "FengYue-1.0.12-7-arm64-v8a.apk",
+      "localName": "风月-1.0.12-7-arm64-v8a.apk",
+      "size": 58227425,
+      "sha256": "5456cd5f58335a1cd495124dc75fba43e91b2d41187001d34f178affb627ecdc",
+      "url": "https://github.com/Oranges-sama/FengYue-Releases/releases/download/v1.0.12-7/FengYue-1.0.12-7-arm64-v8a.apk"
     }
   ],
   "files": [
@@ -35,8 +35,8 @@
     },
     {
       "path": "data/app.so",
-      "size": 23790472,
-      "sha256": "03eb95450d3b2b300fe2d2e8d59a350d0556c90454822a3f98e42455f611acb7"
+      "size": 24085384,
+      "sha256": "b7c62134e90aae1a5d61a48e93ebffa129db5c116e8c41636a789b659d12680c"
     },
     {
       "path": "data/flutter_assets/AssetManifest.bin",
@@ -260,8 +260,8 @@
     },
     {
       "path": "data/flutter_assets/fonts/MaterialIcons-Regular.otf",
-      "size": 61332,
-      "sha256": "04f5943775d9a405ac062abd9afb7082c0a61ea48e9883105d1ab931cc434280"
+      "size": 61384,
+      "sha256": "edd46417114de948aa7411efd5402674b704fa39b5b2bc35e3a5d33747e6e22d"
     },
     {
       "path": "data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf",
@@ -334,14 +334,9 @@
       "sha256": "02c0affcc4b66f066b5ad3b5cec05cdd1712eeeee99d2554e09b0a99dd2ed1e3"
     },
     {
-      "path": "fengyue_drama_core.dll",
-      "size": 18616320,
-      "sha256": "e8dc01abb776ef2792aef769f6cf10657ee5cf7205d058cbb076461a9a8a84be"
-    },
-    {
       "path": "fengyue_media.exe",
       "size": 1517056,
-      "sha256": "c2ef5117bac9f604bff09666ac3fc42afbb956975b5dfba4de3b88382311f911"
+      "sha256": "732626cee9260628a02d60cb9ba660ccb4f7d1f295a80c35d837bbecb9df0f86"
     },
     {
       "path": "file_selector_windows_plugin.dll",
@@ -412,6 +407,11 @@
       "path": "media_kit_video_plugin.dll",
       "size": 151040,
       "sha256": "82b14d2a47b0a29e82935737941e9767ce68e27e696c69df328a9ddc7c0ad8bb"
+    },
+    {
+      "path": "native_assets.json",
+      "size": 183,
+      "sha256": "7a8d26ce80798579d278f12236d860ac6261118342a1d2dba6698619ad5cf0a2"
     },
     {
       "path": "permission_handler_windows_plugin.dll",
