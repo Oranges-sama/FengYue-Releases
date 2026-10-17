@@ -1,0 +1,627 @@
+{
+  "channel": "beta",
+  "version": "1.0.13",
+  "build": 8,
+  "versionCode": 8,
+  "appVersion": "1.0.13+8",
+  "publishedAt": "2026-10-17T13:26:18Z",
+  "notes": "本版为预览通道体验版，主要变化是短剧播放器与多个站源的修复\n短剧播放器全面换用新引擎，Windows 安装包体积降低，安卓端也能正常播放了\n修复在线剧集全部提示「没有可播放的分集」的问题\n修复详情弹窗在拿不到播放地址时整页报错，现在封面和简介照常显示\n修复花果、饭果、猫果、河果、鬼片、黄果AI 取不到内容的问题\n黄果视频改用新的网络通道，Cloudflare 不再拦截\n番茄模块已合并进主程序，入口加了专业版权限控制\n修复 miku 插件登录弹窗不显示验证问题\n修复类别栏、排行榜顶部留白、超大窗口不加载、回到顶部按钮这几处显示问题\n从下一个版本开始做插件系统与页面结构的整体重构，这一版留给大家做对比体验\n已知问题：液态玻璃、一起听与组队仍在打磨中，部分第三方站点可能随时失效\n\n### 本次产物\n\n- `FengYue-1.0.13-8-Setup.exe`：**Windows 端安装包** —— 下载后双击安装\n- `FengYue-1.0.13-8-arm64-v8a.apk`：安卓安装包 —— **绝大多数安卓手机都装这个**（现在的主流手机都是它）",
+  "installer": {
+    "name": "FengYue-1.0.13-8-Setup.exe",
+    "localName": "风月-1.0.13-8-安装包.exe",
+    "size": 32458020,
+    "sha256": "27a73a426c36d59a4f8171e5bf8cd6d68a7a9365ab39e93f87d271c0c8336b22",
+    "url": "https://github.com/Oranges-sama/FengYue-Releases/releases/download/v1.0.13-8-beta/FengYue-1.0.13-8-Setup.exe"
+  },
+  "apks": [
+    {
+      "name": "FengYue-1.0.13-8-arm64-v8a.apk",
+      "localName": "风月-1.0.13-8-arm64-v8a.apk",
+      "size": 75510698,
+      "sha256": "a35205faebb654050ce2d5e436a9880d2109225501deaffe13f360583ade9dbe",
+      "url": "https://github.com/Oranges-sama/FengYue-Releases/releases/download/v1.0.13-8-beta/FengYue-1.0.13-8-arm64-v8a.apk"
+    }
+  ],
+  "files": [
+    {
+      "path": "WebView2Loader.dll",
+      "size": 165440,
+      "sha256": "9468470d6a4d11179ec179183d130465a380e0dedfdbe1fc2ab404c86c45a85e"
+    },
+    {
+      "path": "connectivity_plus_plugin.dll",
+      "size": 102912,
+      "sha256": "3e6fdf03a70cea586c01daa136e982894149370e3f3c0b874e382f7388bbf882"
+    },
+    {
+      "path": "data/app.so",
+      "size": 28853128,
+      "sha256": "18fc2fc64690190812a430698787610b2a5b41c2138d1738050b786e72b4a274"
+    },
+    {
+      "path": "data/flutter_assets/AssetManifest.bin",
+      "size": 6830,
+      "sha256": "4bb42b6dfe3992f1ca1bd78a00e3fa9348d2eefa3a87c874febcfb9c85725b7c"
+    },
+    {
+      "path": "data/flutter_assets/FontManifest.json",
+      "size": 395,
+      "sha256": "16569df03e00af05f2742908ca20a9a672c29b779769179ee22427f911856f8f"
+    },
+    {
+      "path": "data/flutter_assets/NOTICES.Z",
+      "size": 129244,
+      "sha256": "bdf566e0bf74ce7545acfc2d11e0378ad625fbce3e264f78d26a252fddd46258"
+    },
+    {
+      "path": "data/flutter_assets/NativeAssetsManifest.json",
+      "size": 131,
+      "sha256": "4ac70f7d67abb2ffc105d2cabfdee68c9aa138d132107e5be4949c539f7ce379"
+    },
+    {
+      "path": "data/flutter_assets/assets/fonts/alifangyuan.ttf",
+      "size": 7402152,
+      "sha256": "b0b8c4c057af7dbc6ccb52a3ad00138fed41d1ad37d4f4a666b6cd431c913d94"
+    },
+    {
+      "path": "data/flutter_assets/assets/icons/app_icon.png",
+      "size": 541935,
+      "sha256": "53da3111c9ff84b69ab3602ee48520f42983a0d1e284f0741e1abbcee97f5452"
+    },
+    {
+      "path": "data/flutter_assets/assets/icons/app_icon_foreground.png",
+      "size": 18204,
+      "sha256": "3136784aa5f46dabc2c8ecec78d4a2e1dac9a193f40d3a9e118a51f2f575b35f"
+    },
+    {
+      "path": "data/flutter_assets/assets/icons/fengyue_splash-bg.png",
+      "size": 25873,
+      "sha256": "62a00592d89a59e739d64d760e255f4d346dc6a99dfe495dae2e78d7cf72405e"
+    },
+    {
+      "path": "data/flutter_assets/assets/icons/tray_black.png",
+      "size": 3390,
+      "sha256": "cace72bdc013e12ae2ba9e7d982c9342cb6f5866a70db3c57fee9aed646db69e"
+    },
+    {
+      "path": "data/flutter_assets/assets/icons/tray_white.png",
+      "size": 3830,
+      "sha256": "5d0513b5f3064dd763449255b20452f4f93181098f7a4df5b74c0dcb5a043a05"
+    },
+    {
+      "path": "data/flutter_assets/assets/kugou_verify/captcha.html",
+      "size": 2883,
+      "sha256": "dd8bdd7de58102a93afba3d4806be4d6ff0aa364186e203a202915d34f1797d6"
+    },
+    {
+      "path": "data/flutter_assets/assets/media_bar/heart_off.svg",
+      "size": 813,
+      "sha256": "293f2869edd65bfb6b01501e17975b13a7a7dca5afa54ce0b2b927bc08d88f8b"
+    },
+    {
+      "path": "data/flutter_assets/assets/media_bar/heart_on.svg",
+      "size": 583,
+      "sha256": "d513675456d7a9399973dbe53219be008b63464bfc796b55aac6b6ac7c6b530c"
+    },
+    {
+      "path": "data/flutter_assets/assets/media_bar/next.svg",
+      "size": 696,
+      "sha256": "65700859f445910dd71f88a3c2c273394844e6b2597063bdf866390918486f95"
+    },
+    {
+      "path": "data/flutter_assets/assets/media_bar/pause.svg",
+      "size": 692,
+      "sha256": "6530f797938fe314654e42309f5bb6cae4767dd18f6092305d16189a7afe4975"
+    },
+    {
+      "path": "data/flutter_assets/assets/media_bar/play.svg",
+      "size": 620,
+      "sha256": "70e2d08e0684f94023d4bcf49f71a6414af1df2ea5ccbe34ba19957c90e17865"
+    },
+    {
+      "path": "data/flutter_assets/assets/media_bar/prev.svg",
+      "size": 697,
+      "sha256": "1fd81126d5c817a0ada41147ee3db16a4e8654d24d45593f876cfc468363944c"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/audio-cast.svg",
+      "size": 2046,
+      "sha256": "2d88f9935088c906cf6f1a974a1957d9bb78046509056ce42068435bdf9b1854"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/bd.webp",
+      "size": 1668,
+      "sha256": "ba5d106843367a48260502a0a2f917bfd9214ee1145558313ea64854485fe157"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/comment.svg",
+      "size": 804,
+      "sha256": "96f380b26927222e47b0ebc8c978b404acdba392d1291670dbbd3ffab735ade1"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/download.svg",
+      "size": 598,
+      "sha256": "884c33836ec0acdc64ed2f9195eb4d23dd06ed01c4a1626c5cedbffb75d989e2"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/dropdown.svg",
+      "size": 589,
+      "sha256": "0cbec47431a78998332208ba3a6b230996efc8496b029d29851253a37c9a52fc"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/fullscreen-collapse.svg",
+      "size": 2774,
+      "sha256": "dbf6b769c87a7f928e18dbfa3220342d8fbfb69855f2c7a78a68c1fe4d4b4f8e"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/fullscreen-expand.svg",
+      "size": 2752,
+      "sha256": "67285a40829e0a63779d8d45fa62a01ff51c374995682056f92bd49175a4afbd"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/fullscreen.svg",
+      "size": 872,
+      "sha256": "fbeef55a0de7518141ab6cd418773e2f169ce97270ca028f1df6ac563ee5551a"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/kg.svg",
+      "size": 1340,
+      "sha256": "5184232463af213016615d9b2074a5589c3feb42a78f2ad0cf9fae1f81a9864e"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/kw.svg",
+      "size": 3725,
+      "sha256": "803376721b84b9ed878decc539c701abd6db6e7dae1639c51c696a8730389826"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/lyrics.svg",
+      "size": 2044,
+      "sha256": "d647b3d16a80f43a3cefafa18fee319cccbb5732862ebaf23284bca1fc3fdc47"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/mg.svg",
+      "size": 4841,
+      "sha256": "070596b5d4db88c32613f35bd5751db1243400e639fcd0f679d0df458d4a45b8"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/mode-repeat-one.svg",
+      "size": 1322,
+      "sha256": "868d6cdd5e8e8a35cf900fc215f7e310d9f98d254f3bf9a2040b9404d0468db5"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/mode-repeat.svg",
+      "size": 1162,
+      "sha256": "58f367b81a1decb859658e102f94792b9dc892f5f79c1cb8a1a40d468d37ad6f"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/mode-shuffle.svg",
+      "size": 1507,
+      "sha256": "716030799bbca1207582d081c023b68bf3650382aa8a76ee6a45bee50fb93276"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/more.svg",
+      "size": 255,
+      "sha256": "f3644d74f6cb0c7de0ff62089c638b4d270b805ec9019a08d70658ac25a9164e"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/pointer.png",
+      "size": 7319,
+      "sha256": "63009d3f3edfe2acfc75ba6c97352996bdc719fbd16a0b4afd7811dd5c34da5d"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/queue.svg",
+      "size": 1056,
+      "sha256": "1396c507060acbd3416061bec396666898d20d313b70e36b1e31fa7290f9b701"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/recog.svg",
+      "size": 718,
+      "sha256": "3e6fcf7c183bda48899d4b93e0e34647bcbdb023b00796ecf32baa8a2221e41d"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/skin.svg",
+      "size": 923,
+      "sha256": "1b0e846a060461d7eb9f45e3d2a8d8c5b4a0a38fb3ca587e49bcd9365d3e53ff"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/timer.svg",
+      "size": 1172,
+      "sha256": "3fdca177021f76410acb2745f51131baf2367bc7f196bba7c06293de2d27e157"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/tx.svg",
+      "size": 1343,
+      "sha256": "ddd4d1a06b1cc576b64c1483d08954acdd8adfe58397465fb4a1aacf06864217"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/volume-high.svg",
+      "size": 1850,
+      "sha256": "7d0491553cdd553066cdb62e3690d21fbf9e7739603bd52ac06ed7e5271da4b8"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/volume-low.svg",
+      "size": 1020,
+      "sha256": "7ad14be46002b245f5ea3756a8e4d5ebe99fb1eea4cc486e3e0cb2437fd6ec19"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/volume-mid.svg",
+      "size": 1367,
+      "sha256": "0af423b6dd0b10d08c84f9432ea8a7ab8767ad7c889d0d5bcb0d579d1252f88e"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/volume-off.svg",
+      "size": 974,
+      "sha256": "d69029018c505a245aab6552dedd5b0137d778be85f9f36590cd4664cf3281c1"
+    },
+    {
+      "path": "data/flutter_assets/assets/music_icons/wy.svg",
+      "size": 2269,
+      "sha256": "8291d2cb12c602a84017372295eb6ff7d43d587b5a70b4236aff9f4c22a96870"
+    },
+    {
+      "path": "data/flutter_assets/assets/tomato/branding/README.md",
+      "size": 1089,
+      "sha256": "96214e0f2fe9b9fa7fdf5cfded6a76e72d55a317da5fb44ed79cf67862d5c89b"
+    },
+    {
+      "path": "data/flutter_assets/assets/tomato/branding/app_icon_source.png",
+      "size": 456908,
+      "sha256": "53553e8c4ea0efd98974ac2e5fb9d9c95db07d3063d7f28819eaf834b195e464"
+    },
+    {
+      "path": "data/flutter_assets/assets/tomato/config/config.json",
+      "size": 509,
+      "sha256": "4f631897c2fd4cf990f66ac21a590dd5b06479d292053aa805246d5e3c193a27"
+    },
+    {
+      "path": "data/flutter_assets/assets/tomato/config/device_pool.example.json",
+      "size": 341,
+      "sha256": "e906e1c54f84548afb1300471e8767ba1d891da469898cc1f7f364b3ffae7ab8"
+    },
+    {
+      "path": "data/flutter_assets/assets/tomato/config/filter.json",
+      "size": 1330,
+      "sha256": "1a9c4b37ae59ec99795d1112ca703f17d0259d71025c354fb53faaa9add77143"
+    },
+    {
+      "path": "data/flutter_assets/assets/tomato/filters/article.js",
+      "size": 186,
+      "sha256": "13fae616a11bf07c3015e22d0b78ab8fe7aabc1a9e0407c50201cfaab288f489"
+    },
+    {
+      "path": "data/flutter_assets/assets/tomato/filters/audio.js",
+      "size": 186,
+      "sha256": "13fae616a11bf07c3015e22d0b78ab8fe7aabc1a9e0407c50201cfaab288f489"
+    },
+    {
+      "path": "data/flutter_assets/assets/tomato/filters/author.js",
+      "size": 186,
+      "sha256": "13fae616a11bf07c3015e22d0b78ab8fe7aabc1a9e0407c50201cfaab288f489"
+    },
+    {
+      "path": "data/flutter_assets/assets/tomato/filters/book.js",
+      "size": 186,
+      "sha256": "13fae616a11bf07c3015e22d0b78ab8fe7aabc1a9e0407c50201cfaab288f489"
+    },
+    {
+      "path": "data/flutter_assets/assets/tomato/filters/chapter.js",
+      "size": 2433,
+      "sha256": "bd61590b7b98eff902c81ca87bf31754230f444bc9588ad7f91c23b6f18fcc24"
+    },
+    {
+      "path": "data/flutter_assets/assets/tomato/filters/comment.js",
+      "size": 186,
+      "sha256": "13fae616a11bf07c3015e22d0b78ab8fe7aabc1a9e0407c50201cfaab288f489"
+    },
+    {
+      "path": "data/flutter_assets/assets/tomato/filters/forum_id.js",
+      "size": 39,
+      "sha256": "e8d87bdeec6d35f85b7f19d0539ac08e4a668cbd8167d9d0bcdb5edafd819bff"
+    },
+    {
+      "path": "data/flutter_assets/assets/tomato/filters/item.js",
+      "size": 186,
+      "sha256": "13fae616a11bf07c3015e22d0b78ab8fe7aabc1a9e0407c50201cfaab288f489"
+    },
+    {
+      "path": "data/flutter_assets/assets/tomato/filters/manga.js",
+      "size": 186,
+      "sha256": "13fae616a11bf07c3015e22d0b78ab8fe7aabc1a9e0407c50201cfaab288f489"
+    },
+    {
+      "path": "data/flutter_assets/assets/tomato/filters/novel.js",
+      "size": 186,
+      "sha256": "13fae616a11bf07c3015e22d0b78ab8fe7aabc1a9e0407c50201cfaab288f489"
+    },
+    {
+      "path": "data/flutter_assets/assets/tomato/filters/rank.js",
+      "size": 186,
+      "sha256": "13fae616a11bf07c3015e22d0b78ab8fe7aabc1a9e0407c50201cfaab288f489"
+    },
+    {
+      "path": "data/flutter_assets/assets/tomato/filters/recommend.js",
+      "size": 186,
+      "sha256": "13fae616a11bf07c3015e22d0b78ab8fe7aabc1a9e0407c50201cfaab288f489"
+    },
+    {
+      "path": "data/flutter_assets/assets/tomato/filters/search.js",
+      "size": 360,
+      "sha256": "204510d5df226524055a3443f4d9fc15c66bfe7ed3c3baa5f89fdfba5a5cddce"
+    },
+    {
+      "path": "data/flutter_assets/assets/tomato/filters/video.js",
+      "size": 186,
+      "sha256": "13fae616a11bf07c3015e22d0b78ab8fe7aabc1a9e0407c50201cfaab288f489"
+    },
+    {
+      "path": "data/flutter_assets/assets/tomato/filters/viewer.js",
+      "size": 39,
+      "sha256": "e8d87bdeec6d35f85b7f19d0539ac08e4a668cbd8167d9d0bcdb5edafd819bff"
+    },
+    {
+      "path": "data/flutter_assets/assets/tomato/images/app_logo.webp",
+      "size": 4430,
+      "sha256": "b88b043643add3bed04cf5256cc563110d6d00365df0a276e2560753176c6cd0"
+    },
+    {
+      "path": "data/flutter_assets/assets/tomato/lottie/like_video_center.json",
+      "size": 6945,
+      "sha256": "a99528c971f84130d02b41db5d14661de0b70890b08cf20d8e76eb9200ec5a91"
+    },
+    {
+      "path": "data/flutter_assets/assets/tomato/lottie/unlock_speed.json",
+      "size": 3241,
+      "sha256": "d8688d37e4034ee45c8f36edf843b824308e6f94d73d857dc52636a4387f02b1"
+    },
+    {
+      "path": "data/flutter_assets/assets/tomato/lottie/up_arrow.json",
+      "size": 4883,
+      "sha256": "d66f763fba20f89157e1fba484f016e9431d5e3dbcfcc5fbd8d80b72a32cbf07"
+    },
+    {
+      "path": "data/flutter_assets/assets/tomato/lottie/video_playing_orange.json",
+      "size": 4366,
+      "sha256": "c78348ce7f815f9a1c7f1c238e6f4df4027dbf3ec5762c9cf6b55ed806673b75"
+    },
+    {
+      "path": "data/flutter_assets/assets/tomato/plugins/manga_reader.html",
+      "size": 16892,
+      "sha256": "0109ccb92cab3722b33e8e6aee74e13ddaab34364f2fdd0329ef430813ed11ea"
+    },
+    {
+      "path": "data/flutter_assets/assets/tomato/plugins/player.html",
+      "size": 23621,
+      "sha256": "6f9358a742dceec86a45a03cfc4dc555135e1e3faff6d0ea49d6eaf433ed0b21"
+    },
+    {
+      "path": "data/flutter_assets/assets/tomato/web/comic.html",
+      "size": 20324,
+      "sha256": "b4730714d0c498de4d1068f46d27bb2fede97d3eff5b9b24fbcfd03e33b9e9b5"
+    },
+    {
+      "path": "data/flutter_assets/assets/tomato/web/detail.html",
+      "size": 29131,
+      "sha256": "21d69b4162c1b4bc41be6a454ba5fec6ea6155af7c775bc97c997a2508a52550"
+    },
+    {
+      "path": "data/flutter_assets/assets/tomato/web/favicon.png",
+      "size": 4750,
+      "sha256": "90796496269cda805ac97f35996e22b060bfd06832096ea15f6d670f612badd2"
+    },
+    {
+      "path": "data/flutter_assets/assets/tomato/web/index.html",
+      "size": 27648,
+      "sha256": "f74876ec86e2f08c824aa690f6c9dc6e052d9648ea163c70736dc829c17a52e8"
+    },
+    {
+      "path": "data/flutter_assets/assets/tomato/web/listen.html",
+      "size": 27950,
+      "sha256": "40a91b3a054fdf76d41985f94ba9e99e63f4611a2ef29c8dd1c3b51a33b2830b"
+    },
+    {
+      "path": "data/flutter_assets/assets/tomato/web/read.html",
+      "size": 49585,
+      "sha256": "0fef61d99e5846bf1db05c2cd33ec524dbf48e92471c30a4522d6b09645b4005"
+    },
+    {
+      "path": "data/flutter_assets/assets/tomato/web/video.html",
+      "size": 19325,
+      "sha256": "1ad890ee02bf34f1849771cce67d94f3ad544f01b0282fe7ca25790c1db31897"
+    },
+    {
+      "path": "data/flutter_assets/fonts/MaterialIcons-Regular.otf",
+      "size": 67260,
+      "sha256": "741419f220b258ea56570e18138a131ef698e7b157d22981cd6b2f2a4ac2e1cf"
+    },
+    {
+      "path": "data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf",
+      "size": 257628,
+      "sha256": "67c44fe9183b002e79dde7f6977e2988661c9a3e4a3c5fce968787efdbed823c"
+    },
+    {
+      "path": "data/flutter_assets/packages/flutter_inappwebview/assets/t_rex_runner/t-rex.css",
+      "size": 1688,
+      "sha256": "2e563220bd855e11f230dc27a0d6f2fd5b839a2996f86edc8025aab45e6fa5c3"
+    },
+    {
+      "path": "data/flutter_assets/packages/flutter_inappwebview/assets/t_rex_runner/t-rex.html",
+      "size": 82244,
+      "sha256": "dc72cfc1f1d2a5013bb9de34f8cacf5e26e542d7d713fcbe09b865b4aaca6ddf"
+    },
+    {
+      "path": "data/flutter_assets/packages/flutter_inappwebview_web/assets/web/web_support.js",
+      "size": 28409,
+      "sha256": "2f9ccef9db4da6b73d3c678ffe570aad402791b00dfa520730fdb66d0dc209fc"
+    },
+    {
+      "path": "data/flutter_assets/packages/flutter_js/assets/js/fetch.js",
+      "size": 1908,
+      "sha256": "466306adec694b9c09cfbc2702810a623396f23f51158e0fad47c513ddcf2317"
+    },
+    {
+      "path": "data/flutter_assets/packages/flutter_lucide/lib/fonts/lucide.ttf",
+      "size": 33480,
+      "sha256": "48a722a364c3964c876e7cd6f96253275c696debe7bd5cdc6f7b1320d2decacd"
+    },
+    {
+      "path": "data/flutter_assets/packages/material_ui/shaders/ink_sparkle.frag",
+      "size": 21856,
+      "sha256": "1fe8436a743884cb65078fe8c7b38e18f5365f2a2961270916f426fd13c604af"
+    },
+    {
+      "path": "data/flutter_assets/packages/oc_liquid_glass/shaders/liquid_glass.frag",
+      "size": 69712,
+      "sha256": "1ec74a7931f9f0ad83583a27cb28aca6ad2e49037bb4c2cf8459524ee04ec28b"
+    },
+    {
+      "path": "data/flutter_assets/packages/wakelock_plus/assets/no_sleep.js",
+      "size": 13669,
+      "sha256": "726c644cda17bf271d996fb629806a59409607e9b00e0dfbf75adfd3986bbb7e"
+    },
+    {
+      "path": "data/flutter_assets/shaders/ink_sparkle.frag",
+      "size": 21856,
+      "sha256": "1fe8436a743884cb65078fe8c7b38e18f5365f2a2961270916f426fd13c604af"
+    },
+    {
+      "path": "data/flutter_assets/shaders/liquid_refraction.frag",
+      "size": 16912,
+      "sha256": "23736d11ac5d9ccd2ab7c32894b8fdf27f91e163b8b643705dc121b5e1054ad2"
+    },
+    {
+      "path": "data/flutter_assets/shaders/stretch_effect.frag",
+      "size": 17616,
+      "sha256": "bc7599dbbbaab310efe41520574138d21fb18a88c8fe4495ed79315309336f6f"
+    },
+    {
+      "path": "data/icudtl.dat",
+      "size": 864880,
+      "sha256": "325a86063d26334c2eabe1743cea073b612540fbf3d8fc2ef0b5708e3763a8c7"
+    },
+    {
+      "path": "desktop_drop_plugin.dll",
+      "size": 91648,
+      "sha256": "6a769dd9a1fca40812bd7bac82c87b913310af7fbd11245cb731eec9299a0758"
+    },
+    {
+      "path": "dynamic_color_plugin.dll",
+      "size": 82944,
+      "sha256": "02c0affcc4b66f066b5ad3b5cec05cdd1712eeeee99d2554e09b0a99dd2ed1e3"
+    },
+    {
+      "path": "fengyue_media.exe",
+      "size": 1517056,
+      "sha256": "11048883bcbfee4c4ca02388b70446804b062aab20edaad5f449110e1d934e47"
+    },
+    {
+      "path": "ffmpeg-9.dll",
+      "size": 12784128,
+      "sha256": "e9db4e8c40e270cc520d17668017f93ca5e94b196a23a3e09809306d1e4cab12"
+    },
+    {
+      "path": "file_selector_windows_plugin.dll",
+      "size": 111616,
+      "sha256": "1b2843f64dd1749d2064043fd62eb1362b37e6a264d793565b703d2fbe4a8e5e"
+    },
+    {
+      "path": "flutter_inappwebview_windows_plugin.dll",
+      "size": 968704,
+      "sha256": "b9225aa4a63d1677ef1ab3cbe457bf781ea7320ce3d26ba9df2f1cbbb673ca02"
+    },
+    {
+      "path": "flutter_js_plugin.dll",
+      "size": 88576,
+      "sha256": "2c675c0265359e9fbe37248d3babcb1c6267f168afe9e4febe23c346a49b754f"
+    },
+    {
+      "path": "flutter_secure_storage_windows_plugin.dll",
+      "size": 159744,
+      "sha256": "286f7e175dfa83361d4df8db3b906f9505dd550d0fb95e790e1313fb15dcc06f"
+    },
+    {
+      "path": "flutter_tts_plugin.dll",
+      "size": 160768,
+      "sha256": "108ed9c2f02cbe3f18df11e834e2f4f8080e51c258eb5aca620ada213747e2ef"
+    },
+    {
+      "path": "flutter_volume_controller_plugin.dll",
+      "size": 109056,
+      "sha256": "9d23d622c130f0b6641045425815faceaf7ac2f4728e5d039ce9fe10e4fbebe6"
+    },
+    {
+      "path": "flutter_windows.dll",
+      "size": 21274112,
+      "sha256": "4598eeff31a9b24947083d3722ccfe0ce62aced05c4bd2c717a4b4af492dac9b"
+    },
+    {
+      "path": "fvp.dll",
+      "size": 138240,
+      "sha256": "93be90e7a9d616650d577e4eb5b44ba08b70590f2d049a61ecb7f4b84a736bc6"
+    },
+    {
+      "path": "fy_core.dll",
+      "size": 12218368,
+      "sha256": "990387bda56dedcb63c41b204c41a78819021e23cfadc5a9320098cb8f87486d"
+    },
+    {
+      "path": "gal_plugin.dll",
+      "size": 182272,
+      "sha256": "d6f45da4000ee704ca78aeecbd2d3c8441f603d880858a85c03ce126318a6356"
+    },
+    {
+      "path": "just_audio_windows_plugin.dll",
+      "size": 181248,
+      "sha256": "9fda1e1449cf43b61a48e75280ec61f1857dd6eeab4746627602259ecaa15d0a"
+    },
+    {
+      "path": "libass.dll",
+      "size": 1766400,
+      "sha256": "18bdf38057b0dcb7da196f57f27cc706047ebfd789d15e3dd6715f85d930e107"
+    },
+    {
+      "path": "mdk-braw.dll",
+      "size": 111104,
+      "sha256": "7b6f2124143e7996dbfc51f3d4636026f754f5d132a8a488155f9dd9d9f54a28"
+    },
+    {
+      "path": "mdk-nvjp2k.dll",
+      "size": 248832,
+      "sha256": "8cdd6ec9899e82898e36994f973767c591019b6ad7e76c63b05d630dd9cba98e"
+    },
+    {
+      "path": "mdk-r3d.dll",
+      "size": 141312,
+      "sha256": "23e851b58c2c2be7e38c76e5ef1feaba9c408b7c99fe16dae75ca21f5bb4669d"
+    },
+    {
+      "path": "mdk.dll",
+      "size": 2702336,
+      "sha256": "e8e2c1e72ea0eb7a85d38279120a06f1e78b957a7f5948b794788439c67f11f1"
+    },
+    {
+      "path": "permission_handler_windows_plugin.dll",
+      "size": 120320,
+      "sha256": "12a13ae6f3e36a0e8282aecbd734d260c886280057f2d5a6417ee05097c26714"
+    },
+    {
+      "path": "quickjs_c_bridge.dll",
+      "size": 677376,
+      "sha256": "e2051274a1d7599d131d45b96c7cc53519a9009bf43a802b922f73031d3d3b4b"
+    },
+    {
+      "path": "record_windows_plugin.dll",
+      "size": 216064,
+      "sha256": "d7636764ac77bf3966d6f4d607f50cdc9a4088d57693bd372495432bb940c353"
+    },
+    {
+      "path": "sqlite3.dll",
+      "size": 1714688,
+      "sha256": "858141a2826f53e8374cb07de2638e0f1ac944f49b897dd558feba5597e86d1c"
+    },
+    {
+      "path": "url_launcher_windows_plugin.dll",
+      "size": 98304,
+      "sha256": "ac195139fc360932f6554334b3dad9d47b19fd99a8e28d008f344a811016b2d7"
+    }
+  ]
+}
